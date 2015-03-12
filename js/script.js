@@ -2,7 +2,7 @@ $(document).ready(function() {
 	var width = $(window).width();
 		if(width > 920)
 			{
-				$('.modal').css({"height":"150px"});
+				$('.modal').css({"height":"100px"});
 				//$('.background').css({"height":"500px"})
 			}
 		else if(width > 640)
@@ -19,7 +19,7 @@ $(document).ready(function() {
 		var width = $(window).width();
 		if(width > 920)
 			{
-				$('.modal').css({"height":"150px"});
+				$('.modal').css({"height":"100px"});
 				//$('.background').css({"height":"500px"});
 			}
 		else if(width > 640)
