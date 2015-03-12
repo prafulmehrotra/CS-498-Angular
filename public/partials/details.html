@@ -1,0 +1,28 @@
+<div class="row">
+	<div class="large-1 columns" >
+		<a href="#/movie/{{rank}}" ng-click="(rank>1)?rank = rank-1:rank=250" class="left"><i class="fa fa-arrow-left fa-5x left"></i></a>
+		
+	</div>
+	<div class="large-9 columns" >
+		<div class = "text-center">
+		<img ng-src="./data/images/{{movies[rank-1].imdbID}}.jpg">
+		</div>
+		<p> Title: {{movies[rank - 1].title}} </p>
+		<p> Rated: {{movies[rank - 1].rated}} </p>
+		<p> Release Date: {{movies[rank - 1].released}} </p>
+		<p> Runtime: {{movies[rank - 1].runtime}} </p>
+		<p> Genre: <span ng-repeat = "genre in movies[rank - 1].genre">{{genre}} </span></p>
+		<p> Director: <span ng-repeat = "director in movies[rank - 1].director">{{director}}</span> </p>
+		<p> Actors: <span ng-repeat = "actor in movies[rank - 1].actors">{{actor}}  </span></p>
+		<p> Plot: {{movies[rank - 1].plot}} </p>
+		<p> Language: <span ng-repeat = "language in movies[rank - 1].language">{{language}} </span> </p>
+		<p> Country: <span ng-repeat = "country in movies[rank - 1].country">{{country}} </span> </p>
+		<p> Awards: {{movies[rank - 1].awards}} </p>
+		<p> Metascore: {{movies[rank - 1].metascore}} </p>
+		<p> IMDB Rating: {{movies[rank - 1].imdbRating}} </p>
+		<p> Votes: {{movies[rank - 1].imdbVotes}} </p>
+	</div>
+	<div class="large-1 columns" >
+		<a href="#/movie/{{rankint + 1}}" ng-click="(rankint<250)?rankint=rankint:rankint=0" class="right"><i class="fa fa-arrow-right fa-5x right"></i></a>
+	</div>
+</div>

@@ -3,58 +3,470 @@
 <head>
   <meta charset="UTF-8">
   <title>MP2 Starter</title>
-  <script src="./lib/angular/angular.min.js"></script>
-  <script src="./js/controllers.js"></script>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./foundation/css/foundation.css">
+  <!--<script src="./lib/angular/angular.min.js"></script>
+  <script src="./js/controllers.js"></script>-->
   
+  <link rel="stylesheet" href="./foundation/css/foundation.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!--slick-->
+  <link rel="stylesheet" href="./lib/slick.js/slick/slick.css" type="text/css"/>
+  <link rel="stylesheet" href="./lib/slick.js/slick/slick-theme.css" type="text/css"/>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body>
 
+<div class ="sticky">
 	<nav class="top-bar" data-topbar role="navigation">
 	  <ul class="title-area">
 	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
+	      <h1><a href="#">ICC Cricket World Cup 2015</a></h1>
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 	  </ul>
 
 	  <section class="top-bar-section">
 	    <!-- Left Nav Section -->
 	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
+	      <li><a href="#one">The Teams </a></li>
+	      <li><a href="#two">Tournament </a></li>
+	      <li><a href="#three">Gallery </a></li>
+	      <li><a href="#three">Videos </a></li>
+	      
 	    </ul>
 	  </section>
 	</nav>
+</div>
+        <div class = "back"></div>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
+        
+		<div class="row one">
+		 	<h4 class="text-center"> The Teams </h4>
+			<div class="small-12 medium-6 large-3 columns modal" data-reveal-id="firstModal">
+				<p class="text-center hov">Afghanistan</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+				<p class="text-center hov">Australia</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+				<p class="text-center hov">Bangladesh</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+				<p class="text-center hov">England</p>
+			
+			</div>
+		
+		</div>
+		<div class="row one">
+			<div class="small-12 medium-6 large-3 columns modal">
+			<p class="text-center">India</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<p class="text-center">Ireland</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<p class="text-center">New Zealand</p>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<p class="text-center">Pakistan</p>
+			
+			</div>
+		</div>
+		<div class="row one">
+			<div class="small-12 medium-6 large-3 columns modal">
+			<h2 class="text-center">Scotland</h2>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<h2 class="text-center">South Africa</h2>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<h2 class="text-center">Sri Lanka</h2>
+			
+			</div>
+			<div class="small-12 medium-6 large-3 columns modal">
+			<h2 class="text-center">United Arab Emirates</h2>
+			
+			</div>
+		</div>
+		<div class="row one">
+			<div class="small-12 medium-6 large-offset-3 large-3 columns modal"><h2 class="text-center">West Indies</h2></div>
+			<div class="small-12 medium-6 large-3 columns end modal"><h2 class="text-center">Zimbabwe</h2></div>
+		</div>
+
+	<h4 class="text-center" id="two"> The Tournament </h4>
+ 	<div class="row two">
+ 		<div class="small-12 large-offset-2 large-8 columns">
+ 			<table style="width:100%;">
+  				<thead>
+    				<tr>
+      				<th >Date</th>
+      				<th>Time</th>
+      				<th >Match</th>
+      				<th >Place</th>
+    				</tr>
+  				</thead>
+  				<tbody>
+    			<tr>
+      				<td>Sat Feb 14 (50 ovs)</td>
+      				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+      				<td>1st Match, Pool A - New Zealand v Sri Lanka</td>
+      				<td>Hagley Oval, Christchurch</td>
+    			</tr>
+    			<tr>
+      				<td>Sat Feb 14 (50 ovs)</td>
+      				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+      				<td>2nd Match, Pool A - Australia v England</td>
+      				<td>Melbourne Cricket Ground</td>
+    			</tr>
+    			<tr>
+      				<td>Sun Feb 15 (50 ovs)</td>
+      				<td>14:00 local (01:00 GMT | 20:00 EST -1d | 19:00 CST -1d | 17:00 PST -1d)</td>
+      				<td>3rd Match, Pool B - South Africa v Zimbabwe</td>
+      				<td>Seddon Park, Hamilton</td>
+    			</tr>
+    			<tr>
+      				<td>Sun Feb 15 (50 ovs)</td>
+      				<td>14:00 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+      				<td>4th Match, Pool B - India v Pakistan</td>
+      				<td>Adelaide Oval</td>
+    			</tr>
+    			<tr>
+      				<td>Mon Feb 16 (50 ovs)</td>
+      				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+      				<td>5th Match, Pool B - Ireland v West Indies</td>
+      				<td>Saxton Oval, Nelson</td>
+    			</tr>
+    			<tr>
+      				<td>Tue Feb 17 (50 ovs)</td>
+      				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+      				<td>6th Match, Pool A - New Zealand v Scotland</td>
+      				<td>University Oval, Dunedin</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Feb 18 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>7th Match, Pool A - Afghanistan v Bangladesh</td>
+    				<td>Manuka Oval, Canberra</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Feb 19 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>8th Match, Pool B - United Arab Emirates v Zimbabwe</td>
+    				<td>Saxton Oval, Nelson</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Feb 20 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 20:00 EST -1d | 19:00 CST -1d | 17:00 PST -1d)</td>
+    				<td>9th Match, Pool A - New Zealand v England</td>
+    				<td>Westpac Stadium, Wellington</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Feb 21 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>10th Match, Pool B - Pakistan v West Indies</td>
+    				<td>Hagley Oval, Christchurch</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Feb 21 (50 ovs)</td>
+    				<td>13:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>11th Match, Pool A - Australia v Bangladesh</td>
+    				<td>Brisbane Cricket Ground, Woolloongabba, Brisbane</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Feb 22 (50 ovs</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>12th Match, Pool A - Afghanistan v Sri Lanka</td>
+    				<td>University Oval, Dunedin</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Feb 22 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>13th Match, Pool B - India v South Africa</td>
+    				<td>Melbourne Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Mon Feb 23 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>14th Match, Pool A - England v Scotland</td>
+    				<td>Hagley Oval, Christchurch</td>
+    			</tr>
+    			<tr>
+    				<td>Tue Feb 24 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>15th Match, Pool B - West Indies v Zimbabwe</td>
+    				<td>Manuka Oval, Canberra</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Feb 25 (50 ovs)</td>
+    				<td>13:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>16th Match, Pool B - Ireland v United Arab Emirates</td>
+    				<td>Brisbane Cricket Ground, Woolloongabba, Brisbane</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Feb 26 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>17th Match, Pool A - Afghanistan v Scotland</td>
+    				<td>University Oval, Dunedin</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Feb 26 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>18th Match, Pool A - Bangladesh v Sri Lanka</td>
+    				<td>Melbourne Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Feb 27 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>19th Match, Pool B - South Africa v West Indies</td>
+    				<td>Sydney Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Feb 28 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 20:00 EST -1d | 19:00 CST -1d | 17:00 PST -1d)</td>
+    				<td>20th Match, Pool A - New Zealand v Australia</td>
+    				<td>Eden Park, Auckland</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Feb 28 (50 ovs)</td>
+    				<td>14:30 local (06:30 GMT | 01:30 EST | 00:30 CST | 22:30 PST -1d)</td>
+    				<td>21st Match, Pool B - India v United Arab Emirates</td>
+    				<td>Western Australia Cricket Association Ground, Perth</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 1 (50 ovs)</td>
+    				<td>13:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>22nd Match, Pool A - England v Sri Lanka</td>
+    				<td>Westpac Stadium, Wellington</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 1 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>23rd Match, Pool B - Pakistan v Zimbabwe</td>
+    				<td>Brisbane Cricket Ground, Woolloongabba, Brisbane</td>
+    			</tr>
+    			<tr>
+    				<td>Tue Mar 3 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>24th Match, Pool B - Ireland v South Africa</td>
+    				<td>Manuka Oval, Canberra</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Mar 4 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 20:00 EST -1d | 19:00 CST -1d | 17:00 PST -1d)</td>
+    				<td>25th Match, Pool B - Pakistan v United Arab Emirates</td>
+    				<td>McLean Park, Napier</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Mar 4 (50 ovs)</td>
+    				<td>14:30 local (06:30 GMT | 01:30 EST | 00:30 CST | 22:30 PST -1d)</td>
+    				<td>26th Match, Pool A - Australia v Afghanistan</td>
+    				<td>Western Australia Cricket Association Ground, Perth</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Mar 5 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>27th Match, Pool A - Bangladesh v Scotland</td>
+    				<td>Saxton Oval, Nelson</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Mar 6 (50 ovs)</td>
+    				<td>14:30 local (06:30 GMT | 01:30 EST | 00:30 CST | 22:30 PST -1d)</td>
+    				<td>28th Match, Pool B - India v West Indies</td>
+    				<td>Western Australia Cricket Association Ground, Perth</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Mar 7 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 20:00 EST -1d | 19:00 CST -1d | 17:00 PST -1d)</td>
+    				<td>29th Match, Pool B - Pakistan v South Africa</td>
+    				<td>Eden Park, Auckland</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Mar 7 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>30th Match, Pool B - Ireland v Zimbabwe</td>
+    				<td>Bellerive Oval, Hobart</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 8 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 17:00 EST -1d | 16:00 CST -1d | 14:00 PST -1d)</td>
+    				<td>31st Match, Pool A - New Zealand v Afghanistan</td>
+    				<td>McLean Park, Napier</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 8 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 22:30 EST -1d | 21:30 CST -1d | 19:30 PST -1d)</td>
+    				<td>32nd Match, Pool A - Australia v Sri Lanka</td>
+    				<td>Sydney Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Mon Mar 9 (50 ovs)</td>
+    				<td>14:00 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>33rd Match, Pool A - Bangladesh v England</td>
+    				<td>Adelaide Oval</td>
+    			</tr>
+    			<tr>
+    				<td>Mon Mar 9 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>34th Match, Pool B - India v Ireland</td>
+    				<td>Seddon Park, Hamilton</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Mar 11 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>35th Match, Pool A - Scotland v Sri Lanka</td>
+    				<td>Bellerive Oval, Hobart</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Mar 12 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>36th Match, Pool B - South Africa v United Arab Emirates</td>
+    				<td>Westpac Stadium, Wellington</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Mar 13 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>37th Match, Pool A - New Zealand v Bangladesh</td>
+    				<td>Seddon Park, Hamilton</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Mar 13 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>38th Match, Pool A - Afghanistan v England</td>
+    				<td>Sydney Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Mar 14 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>39th Match, Pool B - India v Zimbabwe</td>
+    				<td>Eden Park, Auckland</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Mar 14 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>40th Match, Pool A - Australia v Scotland</td>
+    				<td>Bellerive Oval, Hobart</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 15 (50 ovs)</td>
+    				<td>11:00 local (22:00 GMT -1d | 18:00 EDT -1d | 17:00 CDT -1d | 15:00 PDT -1d)</td>
+    				<td>41st Match, Pool B - United Arab Emirates v West Indies</td>
+    				<td>McLean Park, Napier</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 15 (50 ovs)</td>
+    				<td>14:00 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>42nd Match, Pool B - Ireland v Pakistan</td>
+    				<td>Adelaide Oval</td>
+    			</tr>
+    			<tr>
+    				<td>Wed Mar 18 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>1st Quarter-Final - TBC v Sri Lanka</td>
+    				<td>Sydney Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Mar 19 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>2nd Quarter-Final - TBC v Bangladesh</td>
+    				<td>Melbourne Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Fri Mar 20 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>3rd Quarter-Final - Australia v TBC</td>
+    				<td>Adelaide Oval</td>
+    			</tr>
+    			<tr>
+    				<td>Sat Mar 21 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>4th Quarter-Final - New Zealand v TBC</td>
+    				<td>Westpac Stadium, Wellington</td>
+    			</tr>
+    			<tr>
+    				<td>Tue Mar 24 (50 ovs)</td>
+    				<td>14:00 local (01:00 GMT | 21:00 EDT -1d | 20:00 CDT -1d | 18:00 PDT -1d)</td>
+    				<td>1st Semi-Final - TBC v TBC</td>
+    				<td>Eden Park, Auckland</td>
+    			</tr>
+    			<tr>
+    				<td>Thu Mar 26 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>2nd Semi-Final - TBC v TBC</td>
+    				<td>Sydney Cricket Ground</td>
+    			</tr>
+    			<tr>
+    				<td>Sun Mar 29 (50 ovs)</td>
+    				<td>14:30 local (03:30 GMT | 23:30 EDT -1d | 22:30 CDT -1d | 20:30 PDT -1d)</td>
+    				<td>Final - TBC v TBC</td>
+    				<td>Melbourne Cricket Ground</td>
+    			</tr>
+  				</tbody>
+			</table>
+		</div>
+		<div class="large-2 columns"></div>
+	</div>
+	<h4 class="text-center" id="three"> Gallery </h4>
+	<div class="row three">
+		<div class="slider your-class">
+    		<div><img src="http://lorempixel.com/400/200/nature" /></div>
+    		<div><p>test2</p></div>
+    		<div><p>test3</p></div>
+		</div>
+	</div>
 	
-		<h3>Hello, {{name}}</h3>
-
+	
+	
+	<div class="row four" >
+	<h4 class="text-center four"> Videos </h4>
+	
+		<div class="small-12 medium-6 large-3 columns">
+			<div class="flex-video widescreen ">
+				<iframe width="420" height="100" src="https://www.youtube.com/embed/8wDZ3LqcGUQ" frameborder="10" allowFullScreen></iframe>
+			</div>
+		</div>
+		<div class="small-12 medium-6 large-3 columns">
+			<div class="flex-video widescreen ">
+				<iframe width="420" height="100" src="https://www.youtube.com/embed/tvE_LAyfO0g?list=PLtWkiFWAD1cznj5i8nUtFh7P2mY4PKuBB" frameborder="10" allowFullScreen></iframe>
+			</div>
+		</div>
+		<div class="small-12 medium-6 large-3 columns">
+			<div class="flex-video widescreen ">
+				<iframe width="420" height="120" src="https://www.youtube.com/embed/9Aw1vrkCsXo" frameborder="10" allowFullScreen></iframe>
+			</div>
+		</div>
+		<div class="small-12 medium-6 large-3 columns">
+			<div class="flex-video widescreen ">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/jLThtN7BHSM" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
-
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
-	</div>
- 
 
 
-  <script src="./js/script.js"></script>
+  
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
+  <script src="./js/script.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
+  <script>
+  	$(document).foundation();
+  	$(document).ready(function(){
+  		$('.your-class').slick({
+  			dots: true,
+			infinite: true,
+  		});
+  		
+  		});
+  </script>
+  <script src="./lib/slick.js/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

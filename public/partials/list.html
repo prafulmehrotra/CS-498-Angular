@@ -1,0 +1,17 @@
+<form>
+    Search: <input ng-model = "query">
+    Sort By: <select ng-model="sorting">
+      <option value = "title"> Movie Title </option>
+      <option value = "rank"> Ranking </option>
+      <option value = "rated"> Movie Rating </option>
+    </select>
+    in: <select>
+        <option ng-click="reverse=false">Ascending</option>
+        <option ng-click="reverse=true">Descending</option>
+        </select>
+  </form>
+  <a href="#/gallery">Gallery View</a>
+  <div ng-repeat="movie in movies | filter:query | orderBy:sorting:reverse" class="row">
+    <div class = "large-3 columns" ></div>
+    <div class = "large-8 columns" ><p><a href="#/movie/{{movie.rank}}">{{movie.title}}</a></p><a href="#/movie/{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"></a></div>
+  </div>

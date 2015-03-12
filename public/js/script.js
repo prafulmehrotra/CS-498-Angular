@@ -1,0 +1,1 @@
+$(document).ready(function(){var width=$(window).width();width>920?$(".modal").css({height:"150px"}):width>640&&$(".modal").css({height:"100px"})}),$(document).ready(function(){$(window).resize(function(){var width=$(window).width();width>920?$(".modal").css({height:"150px"}):width>640&&$(".modal").css({height:"100px"})})});
