@@ -22,3 +22,4 @@ imdbapp.config(['$routeProvider',
         redirectTo: '/movie'
       });
   }]);
+
