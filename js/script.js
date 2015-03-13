@@ -31,9 +31,46 @@ $(document).ready(function() {
 	});
 });
 
+$('li').on('click', function(event) {
+    var target = $(this.id);
+    console.log(target);
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top - 35
+        }, 1000);
+    }
+});
 
 
-
+$(document).ready(function() {
+	$(document).scroll(function () {
+	var position = $(document).scrollTop();
+	
+	$('li').each(function() {
+		var curr = this.id;
+		console.log(curr);
+		var pos = $(curr).position();
+		
+		if(pos.top <= position && (pos.top + $(curr).height()) >= position)
+		{
+			$('li').removeClass("active");
+			var elem = $(this).attr("class");
+			$("."+elem).addClass("active");
+		}
+		else if(position > 1700)
+		{
+			//$('li').removeClass("active");
+			//$('.fifth').addClass("active");
+		}
+		else
+		{
+			/*var m = $(this).attr("class");
+			$("."+m).css({"background":"#000000"});*/
+		}
+	});
+});
+});
 
 
 

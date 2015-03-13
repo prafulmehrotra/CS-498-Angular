@@ -1,34 +1,59 @@
 @import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather");
-@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /* line 8, ../../sass/styles.scss */
+div {
+  -webkit-overflow-scrolling: touch; }
+
+/* line 11, ../../sass/styles.scss */
+.first {
+  background-color: green; }
+
+/* line 15, ../../sass/styles.scss */
 .row {
-  max-width: 100%; }
+  max-width: 85%; }
 
-/* line 12, ../../sass/styles.scss */
+/* line 19, ../../sass/styles.scss */
 .one {
-  background-color: red; }
+  background-color: #0099FF; }
 
-/* line 16, ../../sass/styles.scss */
-body {
-  background-color: red; }
+/* line 23, ../../sass/styles.scss */
+.two {
+  background-color: #FFBF00; }
 
-/* line 20, ../../sass/styles.scss */
+/* line 27, ../../sass/styles.scss */
+.three {
+  background-color: #FAAC58; }
+
+/* line 30, ../../sass/styles.scss */
 .four {
-  background-color: #0B610B; }
+  background-color: #519B51; }
 
-/* line 24, ../../sass/styles.scss */
+/* line 34, ../../sass/styles.scss */
 .modal {
-  margin-top: auto;
-  margin-bottom: auto; }
+  padding: 18px; }
 
-/* line 28, ../../sass/styles.scss */
+/* line 38, ../../sass/styles.scss */
 .modal:hover {
-  background-color: #E45050; }
+  opacity: 0.4;
+  cursor: pointer; }
 
-/* line 32, ../../sass/styles.scss */
+/* line 42, ../../sass/styles.scss */
+.country {
+  display: inline-block; }
+
+/* line 45, ../../sass/styles.scss */
+.even {
+  background-color: #A9E2F3; }
+
+/* line 49, ../../sass/styles.scss */
+.even:hover {
+  background-color: #0099FF; }
+
+/* line 52, ../../sass/styles.scss */
 .back {
   background-image: url("/data/ICC.jpg");
-  background-size: contain;
+  background-color: #0099FF;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -36,3 +61,51 @@ body {
   padding-top: 33%;
   /* (img-height / img-width * width) */
   /* (853 / 1280 * 100) */ }
+
+/* line 65, ../../sass/styles.scss */
+.social {
+  word-spacing: 2px;
+  line-spacing: -2px; }
+
+/* line 72, ../../sass/styles.scss */
+#footer {
+  background-color: #222222;
+  color: white;
+  padding-top: 30px;
+  line-spacing: -4px; }
+
+/* line 79, ../../sass/styles.scss */
+.facebook {
+  color: #0000FF; }
+
+/* line 84, ../../sass/styles.scss */
+.twitter {
+  color: #1E90FF; }
+
+/* line 88, ../../sass/styles.scss */
+.google {
+  color: #B22222; }
+
+/* line 92, ../../sass/styles.scss */
+.youtube {
+  color: red; }
+
+/* line 95, ../../sass/styles.scss */
+.facebook:hover {
+  color: #0000FF;
+  opacity: 0.4; }
+
+/* line 100, ../../sass/styles.scss */
+.twitter:hover {
+  color: #1E90FF;
+  opacity: 0.4; }
+
+/* line 105, ../../sass/styles.scss */
+.google:hover {
+  color: #B22222;
+  opacity: 0.4; }
+
+/* line 110, ../../sass/styles.scss */
+.youtube:hover {
+  color: red;
+  opacity: 0.4; }

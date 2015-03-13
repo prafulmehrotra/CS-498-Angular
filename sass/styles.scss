@@ -5,6 +5,13 @@
 @import "mixins";
 @import "base";
 
+div {
+	-webkit-overflow-scrolling: touch;
+}
+.first {
+	background-color:green;
+}
+
 .row {
 	max-width:85%;
 	}
@@ -14,28 +21,39 @@
 	}
 
 .two {
-		background-color:#33FF99;
-}
-body {
-	background-color:grey;
+		background-color:#FFBF00;
 }
 
+.three {
+		background-color:#FAAC58;
+}
 .four {
-	background-color:#0B610B;
+	background-color:#519B51;
 }
 
 .modal {
-		margin-top:auto;
-		margin-bottom:auto;
+		
+  		padding:18px;
 		}
 .modal:hover {
-	background-color:#E45050;
+	opacity:0.4;
+	cursor:pointer;}
+
+.country {
+	display: inline-block;
+}
+.even {
+	background-color:#A9E2F3;
 }
 
+.even:hover {
+	background-color:#0099FF;
+}
 .back
 {
     background-image: url('/data/ICC.jpg');
-    background-size: contain;
+    background-color:#0099FF;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment:fixed;
     width: 100%;
@@ -44,3 +62,52 @@ body {
                 /* (853 / 1280 * 100) */
 }
 
+.social {
+word-spacing:2px;
+line-spacing:-2px;
+
+}
+
+
+#footer {
+	background-color:#222222;
+	color:white;
+	padding-top:30px;
+	line-spacing:-4px;
+
+}
+.facebook {
+	color:#0000FF;
+
+}
+
+.twitter {
+	color:#1E90FF;
+}
+
+.google {
+	color:#B22222;
+}
+
+.youtube {
+	color:red;
+}
+.facebook:hover {
+	color:#0000FF;
+	opacity:0.4;
+}
+
+.twitter:hover {
+	color:#1E90FF;
+	opacity:0.4;
+}
+
+.google:hover {
+	color:#B22222;
+	opacity:0.4;
+}
+
+.youtube:hover {
+	color:red;
+	opacity:0.4;
+}
