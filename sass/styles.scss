@@ -1,6 +1,4 @@
 @import "compass";
-
-
 @import "variables";
 @import "mixins";
 @import "base";
@@ -17,18 +15,18 @@ div {
 	}
 	
 .one {
-		background-color:#0099FF;
+		background-color:$row-one-color;
 	}
 
 .two {
-		background-color:#FFBF00;
+		background-color:$row-two-color;
 }
 
 .three {
-		background-color:#FAAC58;
+		background-color:$row-three-color;
 }
 .four {
-	background-color:#519B51;
+	background-color:$row-four-color;
 }
 
 .modal {
@@ -51,7 +49,7 @@ div {
 }
 .back
 {
-    background-image: url('/data/ICC.jpg');
+    background-image: url('/data/mpimg/ICC.jpg');
     background-color:#0099FF;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -125,10 +123,10 @@ line-spacing:-2px;
 	
 }
 
-table {
+.reveal-modal, table {
 	font-family: 'Lora', serif;
 	font-weight:10;
-	color:green;
+	
 }
 
 h3 {
@@ -141,4 +139,8 @@ h4 {
 
 li {
 	font-family: 'Oswald', sans-serif;
+}
+
+reveal-modal {
+	background-color:$Modal-color;
 }
