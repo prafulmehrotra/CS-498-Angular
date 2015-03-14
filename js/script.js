@@ -47,48 +47,18 @@ $(document).ready(function() {
 	$(document).scroll(function () {
 	var position = $(document).scrollTop();
 	
-	$('li').each(function() {
+	$('.left li').each(function() {
+		console.log(this.id);
 		var curr = this.id;
-		console.log(curr);
-		var pos = $(curr).position();
+		var pos = $(curr).position() + 10;
 		
 		if(pos.top <= position && (pos.top + $(curr).height()) >= position)
 		{
-			$('li').removeClass("active");
+			$('.left li').removeClass("active");
 			var elem = $(this).attr("class");
 			$("."+elem).addClass("active");
 		}
-		else if(position > 1700)
-		{
-			//$('li').removeClass("active");
-			//$('.fifth').addClass("active");
-		}
-		else
-		{
-			/*var m = $(this).attr("class");
-			$("."+m).css({"background":"#000000"});*/
-		}
+		   /*}*/
 	});
 });
 });
-
-
-
-
-
-/*var divs = document.getElementsByClassName('alert');
-for(var i=0; i<divs.length; i++) {
-  divs[i].addEventListener("click", highlightThis);
-  /*
-  divs[i].addEventListener("click", highlightThis, true);
-  divs[i].addEventListener("click", highlightThis, false);*/
-/*}
-
-function highlightThis(event) {
-    //event.stopPropagation();
-  
-    var backgroundColor = this.style.backgroundColor;
-    this.style.backgroundColor='yellow';
-    alert(this.className);
-    this.style.backgroundColor=backgroundColor;
-}*/

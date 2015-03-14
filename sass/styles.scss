@@ -111,3 +111,34 @@ line-spacing:-2px;
 	color:red;
 	opacity:0.4;
 }
+
+
+.ng-enter, .ng-move{
+	
+}
+
+.ng-leave{
+	
+	animation:fadeOut;
+	transition-delay: 0.5s;
+	transition-duration:0.5s;
+	
+}
+
+table {
+	font-family: 'Lora', serif;
+	font-weight:10;
+	color:green;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+	font-family: 'Merriweather', serif;
+}
+
+li {
+	font-family: 'Oswald', sans-serif;
+}

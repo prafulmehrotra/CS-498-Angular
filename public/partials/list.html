@@ -5,13 +5,11 @@
       <option value = "rank"> Ranking </option>
       <option value = "rated"> Movie Rating </option>
     </select>
-    in: <select>
-        <option ng-click="reverse=false">Ascending</option>
-        <option ng-click="reverse=true">Descending</option>
-        </select>
+    
   </form>
-  <a href="#/gallery">Gallery View</a>
-  <div ng-repeat="movie in movies | filter:query | orderBy:sorting:reverse" class="row">
-    <div class = "large-3 columns" ></div>
-    <div class = "large-8 columns" ><p><a href="#/movie/{{movie.rank}}">{{movie.title}}</a></p><a href="#/movie/{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg"></a></div>
+  
+  <div ng-repeat="movie in movies | filter:query | orderBy:sorting"  class="row">
+    <div class = "large-offset-2 large-8 columns end" ng-animate="animate" ><div class="small-6 columns"> <p><a href="#/movie/{{movie.rank}}">{{movie.title}}</a></p></div><div class="small-6 columns"> <a href="#/movie/{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg" style ="width:80px; height:80px;"></a></div></div>
   </div>
+
+ 
