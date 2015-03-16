@@ -20,7 +20,7 @@ imdbapp.config(['$routeProvider',
         controller: 'GalleryView'
       }).
       otherwise({
-        redirectTo: './movie'
+        redirectTo: '/movie'
       });
   }]);
 
